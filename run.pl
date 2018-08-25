@@ -2,20 +2,23 @@
 use warnings; use strict;
 use LWP::Simple;
 
-print ">>> TOP => Delet .out/.vvp/.vcd! \n";
+my $now_time = localtime;
+my $PATH = 'C:\Users\Lin\Documents\GitHub'.
+			'\verilog_freq_div\rtl\*';
+
+print ">>> TOP => Delet .out/.vvp/.vcd!\n";
 system "del *.out";#for windows
-#system "del *.vvp";#for windows
+system "del *.vvp";#for windows
 system "del *.vcd";#for windows
 #system "rm -fr test_0_$stockNO.txt";#for linux 
 
-print ">>> TOP => Run iverilog compiler! \n";
-system "iverilog -g2012 rtl/*";
-#system "iverilog -g2012 -gno-io-range-error rtl/*";
+print ">>> TOP => Run iverilog! $now_time \n";
+system "iverilog -o out.vvp $PATH";
 
-print ">>> TOP => Run vvp simulation! \n";
-system "vvp a.out";
+print ">>> TOP => Run vvp! $now_time \n";
+system "vvp out.vvp";
 
-print ">>> TOP => Run gtkwave! \n";
+print ">>> TOP => Run gtkwave! $now_time \n";
 system "gtkwave *.vcd";
 
 print ">>> TOP => All works have been done! \n\n";
