@@ -10,5 +10,9 @@ This module is used to divide frequency.
 
  Then we get clkout = 9 posedges while refclk = 19 posedges. 
 
- ![image](https://github.com/KuiLiangLin/verilog_freq_div/blob/master/Waveform.JPG)
+ <img src="https://raw.githubusercontent.com/KuiLiangLin/verilog_freq_div/master/Waveform.JPG" height="100%" width="100%" >
  
+<hr>
+<h3> END </h3>
+<ul><li> Codes are <em><a href="https://github.com/KuiLiangLin/verilog_freq_div/">Here</a></em>. </li></ul>
+<ul><li> You can return <em><a href="https://kuilianglin.github.io/Welcome/">My Main Page</a></em>. </li></ul>
