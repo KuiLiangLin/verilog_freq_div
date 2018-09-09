@@ -1,5 +1,9 @@
 # verilog_freq_div
 
+<em><a href="https://github.com/KuiLiangLin/verilog_freq_div/">View frequency divisor on GitHub</a></em>. 
+
+<hr>
+
 This module is used to divide frequency.
 
  If we want 19 clks to be divided into 9 clks, we can use : 
@@ -14,5 +18,4 @@ This module is used to divide frequency.
  
 <hr>
 <h3> END </h3>
-<ul><li> Codes are <em><a href="https://github.com/KuiLiangLin/verilog_freq_div/">Here</a></em>. </li></ul>
 <ul><li> You can return <em><a href="https://kuilianglin.github.io/Welcome/">My Main Page</a></em>. </li></ul>
